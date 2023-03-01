@@ -7,7 +7,7 @@ import org.example.services.SqRoot;
 
 import java.util.Scanner;
 
-public class App 
+public class Calculator
 {
     public static void main( String[] args )
     {
@@ -80,6 +80,5 @@ public class App
             }
         }
 
-        return;
     }
 }
