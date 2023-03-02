@@ -21,27 +21,15 @@ pipeline {
             }
         }
 
-        stage('Build image') {
-               dockerImage = docker.build("darshan4163264/calculatorproj:latest")
+        stage('Building Docker Image') {
+            dockerImage = docker.build("darshan4163264/calculatorproj:latest")
         }
 
-        stage('Push image') {
-                withDockerRegistry([ credentialsId: "darshan4163264", url: "" ]) {
+        stage('Publishing Docker Image') {
+            withDockerRegistry([ credentialsId: "darshan4163264", url: "" ]) {
                 dockerImage.push()
             }
         }
-
-//         stage('Building Docker Image') {
-//             steps {
-//                 sh 'docker build -t darshan4163264/calculatorproj:latest .'
-//             }
-//         }
-//         stage('Publishing Docker Image') {
-//             steps {
-//                 withDockerRegistry([ credentialsId: "darshan4163264", url: "" ]) {
-//                     sh 'docker push darshan4163264/calculatorproj:latest'
-//                 }
-//             }
 
         stage('Cleaning Docker Image') {
             steps {
