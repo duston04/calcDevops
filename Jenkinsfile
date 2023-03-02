@@ -5,6 +5,12 @@ pipeline {
 
 	agent any
 
+	environment {
+	    registry = "darshan4163264/calculatorproj"
+	    registryCredential = 'darshan04'
+	    dockerImage = ''
+	}
+
     stages {
         stage('Git Pull') {
             steps {
@@ -23,13 +29,17 @@ pipeline {
 
         stage('Building Docker Image') {
             steps {
-                sh 'docker build -t darshan4163264/calculatorproj:latest .'
+                script {
+                    dockerImage = docker.build registry + ":latest"
+                }
             }
         }
         stage('Publishing Docker Image') {
             steps {
-                withDockerRegistry([ credentialsId: "darshan4163264", url: "" ]) {
-                    sh 'docker push darshan4163264/calculatorproj:latest'
+                script{
+                    docker.withRegistry( '', registryCredential ) {
+                        dockerImage.push()
+                    }
                 }
             }
         }
