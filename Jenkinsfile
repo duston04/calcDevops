@@ -7,7 +7,7 @@ pipeline {
 
 	environment {
 	    registry = "darshan4163264/calculatorproj"
-	    registryCredential = 'darshan4163264'
+	    registryCredential = 'dockerhub'
 	    dockerImage = ''
 	}
 
