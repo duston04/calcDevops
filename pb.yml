@@ -9,7 +9,7 @@
         state: started
 
     - name: pull docker image
-      shell: docker pull duston04/calculatorproj
+      shell: docker pull duston4163264/calculatorproj
 
     - name: running container
-      shell: docker run -it -d duston04/calculatorproj
+      shell: docker run -it -d duston4163264/calculatorproj
