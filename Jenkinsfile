@@ -7,7 +7,7 @@ pipeline {
 
 	environment {
 	    registry = "darshan4163264/calculatorproj"
-	    registryCredential = 'dockerhub'
+	    registryCredential = 'Master_Jenkins_Private_key'
 	    dockerImage = ''
 	}
 
