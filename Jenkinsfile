@@ -40,7 +40,7 @@ pipeline {
 
         stage('Deploy and Run Image'){
             steps {
-                ansiblePlaybook becomeUser: null, colorized: true, disableHostKeyChecking: true, installation: 'Ansible', inventory: 'inventory', pb: 'playbook.yml', sudoUser: null
+                ansiblePlaybook becomeUser: null, colorized: true, disableHostKeyChecking: true, installation: 'Ansible', inventory: 'inventory', playbook: 'pb.yml', sudoUser: null
             }
         }
 
