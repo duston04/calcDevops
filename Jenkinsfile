@@ -22,19 +22,19 @@ pipeline {
         }
         stage('Building Docker Image') {
             steps {
-                sh 'docker build -t duston04/CalculatorProj:latest .'
+                sh 'docker build -t duston04/calculatorProj:latest .'
             }
         }
         stage('Publishing Docker Image') {
             steps {
                 withDockerRegistry([ credentialsId: "darshan4163264", url: "" ]) {
-                    sh 'docker push duston04/CalculatorProj:latest'
+                    sh 'docker push duston04/calculatorProj:latest'
                 }
             }
         }
         stage('Cleaning Docker Image') {
             steps {
-                sh 'docker rmi -f duston04/CalculatorProj:latest'
+                sh 'docker rmi -f duston04/calculatorProj:latest'
             }
         }
 
