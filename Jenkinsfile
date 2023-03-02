@@ -22,12 +22,16 @@ pipeline {
         }
 
         stage('Building Docker Image') {
-            dockerImage = docker.build("darshan4163264/calculatorproj:latest")
+            steps{
+                dockerImage = docker.build("darshan4163264/calculatorproj:latest")
+            }
         }
 
         stage('Publishing Docker Image') {
-            withDockerRegistry([ credentialsId: "darshan4163264", url: "" ]) {
-                dockerImage.push()
+            steps{
+                withDockerRegistry([ credentialsId: "darshan4163264", url: "" ]) {
+                    dockerImage.push()
+                }
             }
         }
 
