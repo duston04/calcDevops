@@ -27,7 +27,7 @@ pipeline {
             }
         }
 
-        stage('Building Docker Image') {
+        stage('Build Docker Image') {
             steps {
                 script {
                     dockerImage = docker.build registry + ":latest"
@@ -35,7 +35,7 @@ pipeline {
             }
         }
 
-        stage('Publishing Docker Image') {
+        stage('Push Docker Image') {
             steps {
                 script{
                     docker.withRegistry( '', registryCredential ) {
@@ -50,7 +50,7 @@ pipeline {
             }
         }
 
-        stage('Deploy and Run Image'){
+        stage('Deploy Image'){
             steps {
                 ansiblePlaybook becomeUser: null, colorized: true, disableHostKeyChecking: true, installation: 'Ansible', inventory: 'inventory', playbook: 'pb.yml', sudoUser: null
             }
