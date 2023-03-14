@@ -74,7 +74,7 @@ public class Calculator
 
             }catch (Exception e){
                 System.out.println(e);
-                System.out.println("\nApp crashed... Bye");
+                System.out.println("\nApp crashed... Bye see you again");
                 System.out.println("\n_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_\n");
                 break;
             }
