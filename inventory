@@ -1,2 +1,2 @@
 [demoArc]
-client1 ansible_host=172.17.0.2 ansible_conneection=ssh ansible_user=ansible_usr ansible_sudo_pass=1234567890 ansible_python_interpreter=/usr/bin/python3
+client1 ansible_host=172.17.0.2 ansible_conneection=ssh ansible_ssh_user=ansible_usr ansible_ssh_pass=1234567890 ansible_python_interpreter=/usr/bin/python3
