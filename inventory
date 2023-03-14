@@ -1,2 +1,2 @@
 [ubuntu18]
-172.17.0.3 ansible_user=darshandemo
+client1 ansible_host=172.17.0.3 ansible_connect=ssh ansible_user=darshandemo ansible_sudo_pass=1234567890
