@@ -21,8 +21,7 @@ public class Calculator
         int choice;
         Scanner sc = new Scanner(System.in);
 
-        while(true) {
-
+        do{
             System.out.println("1. Square root function - √x \n2. Factorial function - x! \n3. Natural logarithm (base е) - ln(x) \n4. Power function - x^b \n5. Exit\n");
             System.out.print("Enter your choice : ");
             try {
@@ -73,7 +72,7 @@ public class Calculator
                 System.out.println("\n_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_\n");
                 break;
             }
-        }
+        }while(true);
     }
 
     public double power(double a, double b) {
