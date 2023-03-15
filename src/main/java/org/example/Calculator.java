@@ -96,10 +96,10 @@ public class Calculator
         return result;
     }
 
-    public double sub(double number1, double number2) {
-        logger.info("[SUBTRACTION - " + number2 + " FROM " + number1);
-        double result = number1 - number2;
-        logger.info("[RESULT - SUBTRACTION] - " + result);
+    public double naturallog(double a) {
+        logger.info("[NATURAL LOG] - " + a);
+        double result = naturallog(a);
+        logger.info("[RESULT - NATURAL LOG] - " + result);
         return result;
     }
 }
