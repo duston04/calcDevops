@@ -1,0 +1,8 @@
+2023-03-15 22:57:38.211 [main] INFO  org.example.Calculator - [SQUARE ROOT] - 3.0
+2023-03-15 22:57:38.213 [main] INFO  org.example.Calculator - [RESULT - SQUARE ROOT] - 1.7320508075688772
+2023-03-15 22:58:13.620 [main] INFO  org.example.Calculator - [FACTORIAL] - 4.0
+2023-03-15 22:58:13.621 [main] INFO  org.example.Calculator - [RESULT - FACTORIAL] - 24.0
+2023-03-15 22:58:18.246 [main] INFO  org.example.Calculator - [NATURAL LOG] - 4.0
+2023-03-15 22:58:18.247 [main] INFO  org.example.Calculator - [RESULT - NATURAL LOG] - 1.3862943611198906
+2023-03-15 22:58:25.960 [main] INFO  org.example.Calculator - [Power of - 2.0 raise to 3.0
+2023-03-15 22:58:25.961 [main] INFO  org.example.Calculator - [RESULT - POWER Function] - 8.0
