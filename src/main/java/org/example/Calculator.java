@@ -36,21 +36,21 @@ public class Calculator
                     a = sc.nextDouble();
                     SqRoot sqrt = new SqRoot();
                     double result = sqrt.root(a);
-                    System.out.println("The square root of " + a + " is " + result);
+                    System.out.println("The square root of " + a + " is " + calculator.sqareroot(a));
                     System.out.println("\n_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_\n");
                 } else if (choice == 2) {
                     System.out.print("Enter the number you want the Factorial of : ");
                     a = sc.nextDouble();
                     Factorial fact = new Factorial();
                     double result = fact.factorial(a);
-                    System.out.println("The Factorial of " + a + " is " + result);
+                    System.out.println("The Factorial of " + a + " is " + calculator.factorial(a));
                     System.out.println("\n_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_\n");
                 } else if (choice == 3) {
                     System.out.print("Enter the number you want the log of : ");
                     a = sc.nextDouble();
                     Logrithm logarithm = new Logrithm();
                     double result = logarithm.log(a);
-                    System.out.println("The natural log of " + a + " is " + result);
+                    System.out.println("The natural log of " + a + " is " + calculator.naturallog(a));
                     System.out.println("\n_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_\n");
                 } else if (choice == 4) {
                     System.out.print("Enter the base : ");
@@ -59,7 +59,7 @@ public class Calculator
                     b = sc.nextDouble();
                     Power power = new Power();
                     double result = power.power(a, b);
-                    System.out.println("The result of (" + a + " ^ " + b + ") is " + result);
+                    System.out.println("The result of (" + a + " ^ " + b + ") is " + calculator.power(a,b));
                     System.out.println("\n_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_\n");
                 } else if (choice <= 0 || choice > 5) {
                     System.out.println("The choice is invalid....Try again");
