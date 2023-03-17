@@ -1,9 +1,5 @@
 package org.example;
 
-import org.example.services.Factorial;
-import org.example.services.Logrithm;
-import org.example.services.Power;
-import org.example.services.SqRoot;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
