@@ -12,4 +12,4 @@
       shell: docker pull darshan4163264/calculatorproj
 
     - name: running container
-      shell: docker create darshan4163264/calculatorproj:latest
+      shell: docker create -it darshan4163264/calculatorproj:latest
