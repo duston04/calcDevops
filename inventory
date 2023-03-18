@@ -1,3 +1,4 @@
 [demoArc]
 client1 ansible_host=localhost ansible_conneection=ssh ansible_user=darshandemo ansible_sudo_pass=1234567890 ansible_python_interpreter=/usr/bin/python3
 client2 ansible_host=192.168.0.107 ansible_connection=ssh ansible_ssh_user=darshan ansible_ssh_pass=4163264 ansible_python_interpreter=/usr/bin/python3
+client3 ansible_host=10.0.2.15 ansible_connection=ssh ansible_ssh_user=darshan ansible_ssh_pass=4163264 ansible_python_interpreter=/usr/bin/python3
