@@ -29,7 +29,12 @@ public class Calculator
             System.out.print("Enter your choice : ");
             try {
                 choice = sc.nextInt();
-
+            }catch (Exception e) {
+                System.out.println(e);
+                System.out.println("\nApp crashed... Bye and see you again");
+                System.out.println("\n_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_\n");
+                break;
+            }
                 if (choice == 5) {
                     System.out.println("\nBye and thank you for using this app");
                     System.out.println("\nx-x-x-x-x-x-x-x-x-x-x-x-x-x");
@@ -60,13 +65,6 @@ public class Calculator
                     System.out.println("The choice is invalid....Try again");
                     System.out.println("\n_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_\n");
                 }
-
-            } catch (Exception e) {
-                System.out.println(e);
-                System.out.println("\nApp crashed... Bye and see you again");
-                System.out.println("\n_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_\n");
-                break;
-            }
         }
     }
 
